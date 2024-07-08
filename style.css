@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.resume {
+    width: 60%;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    background-color: #f4a261;
+    padding: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-info h1 {
+    margin: 0;
+    color: white;
+    font-size: 2em;
+}
+
+.header-info p {
+    margin: 5px 0;
+    color: white;
+}
+
+.main {
+    display: flex;
+    padding: 20px;
+}
+
+.left-column, .right-column {
+    width: 50%;
+    padding: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid #f4a261;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.tech-skills ul {
+    padding-left: 20px;
+}
+
+.tech-skills ul li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+ .tech-skills ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 150%;
+    transform: translateY(-50%);
+    height: 10px;
+    width: calc(100% - 20px);
+    background-color: orange;
+}
+
+.tech-skills ul li:nth-child(1)::before {
+    width: 90%;
+}
+
+.tech-skills ul li:nth-child(2)::before {
+    width: 80%;
+}
+
+.tech-skills ul li:nth-child(3)::before {
+    width: 75%;
+}
+
+.tech-skills ul li:nth-child(4)::before {
+    width: 60%;
+} 
